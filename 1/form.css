@@ -1,0 +1,196 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 40px 0
+}
+
+.form form {
+    width: 300px
+}
+
+.form .img {
+    width: 250px
+}
+
+.form .img img {
+    width: 100%
+}
+
+.form form input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 16px;
+    border: 1px solid #e7e7e7;
+    background: #f8f9f9 none repeat scroll 0% 0%;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #000;
+    padding-left: 15px;
+    height: 40px
+}
+
+.form form button,
+.btn3 {
+    background: rgb(52, 152, 219) -o-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+    background: rgb(52, 152, 219) -webkit-gradient(linear, left top, left bottom, from(rgb(52, 152, 219)), to(rgb(41, 128, 185))) repeat scroll 0% 0%;
+    background: rgb(52, 152, 219) linear-gradient(to bottom, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    margin: 10px auto;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    font-weight: 700
+}
+
+.btn3 {
+    max-width: 300px
+}
+
+.form form button:hover,
+.btn3:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: rgb(52, 152, 219) -o-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+    background: rgb(52, 152, 219) -webkit-gradient(linear, left top, left bottom, from(rgb(52, 152, 219)), to(rgb(41, 128, 185))) repeat scroll 0% 0%;
+    background: rgb(52, 152, 219) linear-gradient(to bottom, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+    color: #fff
+}
+
+#orderSubmit {
+    background:red;
+    height: 65px;
+    border-radius:2px;
+    position: relative;
+}
+
+#orderSubmit:after {
+    display: inline-block;
+    -webkit-animation: dotty steps(1,end) 1.5s infinite;
+            animation: dotty steps(1,end) 1.5s infinite;
+    content: '';
+    width: 40px;
+    position: absolute;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  @-webkit-keyframes dotty {
+    0%   { content: ''; }
+    25%  { content: '>'; }
+    50%  { content: '>>'; }
+    75%  { content: '>>>'; }
+    100% { content: ''; }
+  }
+  
+  @keyframes dotty {
+    0%   { content: ''; }
+    25%  { content: '>'; }
+    50%  { content: '>>'; }
+    75%  { content: '>>>'; }
+    100% { content: ''; }
+  }
+
+.form form .prices {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin: 0 0 15px;
+    font-family: sans-serif;
+}
+
+.form form .prices .new {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 5px;
+    color: #3498db;
+    font-weight: 700
+}
+
+.form form .prices .new p {
+    font-size: 24px;
+    margin: 0 auto;
+    color: #3498db
+}
+
+.form form .prices .old {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 19px;
+    color: #b2b2b2;
+    margin: 5px
+}
+
+.form form .prices .old p {
+    font-size: 16px;
+    margin: 0 auto;
+    color: #b2b2b2
+}
+
+.toForm {
+    cursor: pointer
+}
+
+@media all and (max-width:600px) {
+    .form {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 20px 0
+    }
+    .form .img {
+        padding: 20px 0
+    }
+}
+
+@media all and (max-width:400px) {
+    .form form input,
+    .form form button {
+        width: 100%
+    }
+}
